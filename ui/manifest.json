@@ -1,31 +1,33 @@
 {
-    "name": "Ext JS 7.6.x Framework - UI",
+    "name": "Sencha Modern 7.6.x Framework - UI",
     "version": "0.1",
     "author": "Sencha Inc.",
     "files": [
-        "../../../../src/frameworks/ext76/ui/canvas/Ext76Canvas.js"
+        "../../../../src/frameworks/modern76/ui/canvas/Modern76Canvas.js"
     ],
     init: function() {
         var mgr = xds.ui.canvas.Manager;
         if (mgr) {
-            mgr.addResource('ext76/framework/classic/theme-classic/resources/theme-classic-all-rtl.css', 'xdsLibraryCss');
-            mgr.addResource('ext76/ext-overrides.css');
-            mgr.addResource('ext76/framework/ext-all-rtl-debug.js');
-            mgr.addResource('ext76/framework/packages/ux/ux-debug.js');
-            mgr.addResource('ext76/framework/packages/google/google-debug.js');
-            mgr.addResource('ext76/framework/packages/charts/charts-debug.js');
-            mgr.addResource('ext76/framework/packages/exporter/exporter-debug.js');
-            mgr.addResource('ext76/framework/packages/calendar/calendar-debug.js');
-            mgr.addResource('ext76/framework/packages/pivot/pivot-debug.js');
-            mgr.addResource('ext76/framework/packages/d3/d3-debug.js');
-            mgr.addResource('ext76/framework/packages/pivot-d3/pivot-d3-debug.js');
+            mgr.addResource('modern76/framework/modern/theme-triton/resources/theme-triton-all.css', 'xdsLibraryCss');
+            mgr.addResource('modern76/sencha-modern-overrides.css');
+            mgr.addResource('modern76/framework/packages/ux/modern-neptune/resources/ux-all.css');
+            mgr.addResource('modern76/sencha-modern-prepare.js');
+            mgr.addResource('modern76/framework/ext-modern-all-debug.js');
+            mgr.addResource('modern76/framework/packages/ux/ux-debug.js');            
+            mgr.addResource('modern76/framework/packages/charts/charts-debug.js');
+            mgr.addResource('modern76/framework/packages/google/google-debug.js');
+            mgr.addResource('modern76/framework/packages/exporter/exporter-debug.js');
+            mgr.addResource('modern76/framework/packages/calendar/calendar-debug.js');
+            mgr.addResource('modern76/framework/packages/pivot/pivot-debug.js');
+            mgr.addResource('modern76/framework/packages/d3/d3-debug.js');
+            mgr.addResource('modern76/framework/packages/froala/froala-editor-debug.js');
+            mgr.addResource('modern76/framework/packages/pivot-d3/pivot-d3-debug.js');
             mgr.addResource('about:blank', 'xdsThemeJs', 'js'); //placeholder for themes that have a JS file, e.g. ext-neptune.js
             mgr.addResource('../../src/vendor/rsvp/rsvp.js');
-            mgr.addResource('../../src/vendor/google/maps.js');
             mgr.addResource('../core/Promiser.js');
             mgr.addResource('../core/CrossWindowMessaging.js');
             mgr.addResource('../ui/canvas/CanvasConfigEncoding.js');
-            mgr.addResource('ext76/ext-overrides.js');
+            mgr.addResource('modern76/sencha-modern-overrides.js');
 
             // Canvas helpers
             mgr.addResource('common/canvas/MouseEvents.js');
@@ -33,29 +35,30 @@
             mgr.addResource('common/canvas/MiscHelper.js');
             mgr.addResource('common/canvas/ModelHelper.js');
             mgr.addResource('common/canvas/AbstractStoreHelper.js');
-            mgr.addResource('ext76/canvas/StoreHelper.js');
+            mgr.addResource('modern76/canvas/StoreHelper.js');
             mgr.addResource('common/canvas/DirectHelper.js');
             mgr.addResource('common/canvas/ResourceHelper.js');
             mgr.addResource('common/canvas/InlineEditHelper.js');
             mgr.addResource('common/canvas/AbstractViewHelper.js');
-            mgr.addResource('ext76/canvas/ViewHelper.js');
+            mgr.addResource('modern76/canvas/ViewHelper.js');
 
             //<!-- dtype classes -->
-            mgr.addResource('ext76/dtypes/Component.js');
-            mgr.addResource('ext76/dtypes/Img.js');
-            mgr.addResource('ext76/dtypes/button/Cycle.js');
-            mgr.addResource('ext76/dtypes/container/Container.js');
-            mgr.addResource('ext76/dtypes/container/Viewport.js');
-            mgr.addResource('ext76/dtypes/form/field/HtmlEditor.js');
-            mgr.addResource('ext76/dtypes/grid/column/Template.js');
-            mgr.addResource('ext76/dtypes/panel/Panel.js');
-            mgr.addResource('ext76/dtypes/resizer/Splitter.js');
-            mgr.addResource('ext76/dtypes/toolbar/Toolbar.js');
-            mgr.addResource('ext76/dtypes/view/View.js');
-            mgr.addResource('ext76/dtypes/window/Window.js');
+            mgr.addResource('modern76/dtypes/dataview/DataView.js');
+            mgr.addResource('modern76/dtypes/dataview/List.js');
+            mgr.addResource('modern76/dtypes/field/DatePicker.js');
+            mgr.addResource('modern76/dtypes/field/Hidden.js');
+            mgr.addResource('modern76/dtypes/form/FieldSet.js');
+            mgr.addResource('modern76/dtypes/navigation/View.js');
+            mgr.addResource('modern76/dtypes/picker/Date.js');
+            mgr.addResource('modern76/dtypes/picker/Slot.js');
+            mgr.addResource('modern76/dtypes/ActionSheet.js');
+            mgr.addResource('modern76/dtypes/Audio.js');
+            mgr.addResource('modern76/dtypes/Button.js');
+            mgr.addResource('modern76/dtypes/Img.js');
+            mgr.addResource('modern76/dtypes/Map.js');
+            mgr.addResource('modern76/dtypes/TitleBar.js');
+            mgr.addResource('modern76/dtypes/Toolbar.js');
+            mgr.addResource('modern76/dtypes/Video.js');
         }
-    },
-    destroy: function() {
-
     }
 }

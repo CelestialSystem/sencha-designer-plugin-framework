@@ -1,10 +1,10 @@
 {
-    "name": "Ext JS 7.6.x Framework - Component",
+    "name": "Sencha Modern 7.6.x Framework - Component",
     "version": "0.1",
     "author": "Sencha Inc.",
     "files": [
         "../../../../src/frameworks/extcommon/component/CodeGeneration.js",
-        "../../../../src/frameworks/ext76/component/CodeGeneration.js",
-        "../../../../src/frameworks/ext76/component/Definition.js"
+        "../../../../src/frameworks/modern76/component/CodeGeneration.js",
+        "../../../../src/frameworks/modern76/component/Definition.js"
     ]
 }

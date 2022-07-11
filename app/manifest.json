@@ -1,9 +1,9 @@
 {
-    "name": "Ext JS 7.6.x Framework - App",
+    "name": "Sencha Modern 7.6.x Framework - App",
     "version": "0.1",
     "author": "Sencha Inc.",
     "files": [
-        "../../../../src/frameworks/ext76/app/Project.js",
-        "../../../../src/frameworks/ext76/app/Settings.js"
+        "../../../../src/frameworks/modern76/app/Project.js",
+        "../../../../src/frameworks/modern76/app/Settings.js"
     ]
 }

@@ -1,20 +1,21 @@
 {
-    "name": "ext76",
+    "name": "modern76",
     "version": "0.1",
     "author": "Sencha Inc.",
-    "description": "Ext JS 7.6.x Framework",
+    "description": "Sencha Modern 7.6.x Framework",
     "plugins": [
         "~/app",
+        "~/init",
         "~/component",
         "~/definitions",
         "~/ui"
     ],
     "files": [
-        "../../../src/frameworks/ext76/Environment.js",
-        "../../../src/frameworks/ext76/DefaultStores.js"
+        "../../../src/frameworks/modern76/Environment.js",
+        "../../../src/frameworks/modern76/DefaultStores.js"
     ],
     "destroy": function() {
-        var plugins = ["Ext JS 7.6.x Framework - UI", "Ext JS 7.6.x Framework - Component", "Ext JS 7.6.x - Definitions", "Ext JS 7.6.x Framework - App"];
+    var plugins = ["Sencha Modern 7.6.x Framework - UI", "Sencha Modern 7.6.x Framework - Component", "Sencha Modern 7.6.x - Definitions", "Sencha Modern 7.6.x Framework - Init", "Sencha Modern 7.6.x Framework - App"];
         plugins.forEach(function(plugin) {
             sencha.plugin.Manager.unload(plugin);
         });
