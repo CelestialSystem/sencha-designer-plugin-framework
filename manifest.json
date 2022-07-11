@@ -1,0 +1,25 @@
+{
+    "name": "ext76",
+    "version": "0.1",
+    "author": "Sencha Inc.",
+    "description": "Ext JS 7.6.x Framework",
+    "plugins": [
+        "~/app",
+        "~/component",
+        "~/definitions",
+        "~/ui"
+    ],
+    "files": [
+        "../../../src/frameworks/ext76/Environment.js",
+        "../../../src/frameworks/ext76/DefaultStores.js"
+    ],
+    "destroy": function() {
+        var plugins = ["Ext JS 7.6.x Framework - UI", "Ext JS 7.6.x Framework - Component", "Ext JS 7.6.x - Definitions", "Ext JS 7.6.x Framework - App"];
+        plugins.forEach(function(plugin) {
+            sencha.plugin.Manager.unload(plugin);
+        });
+        delete xds.builtInSnapshots;
+        xds.builtInSnapshots = {};
+        xds.component.Registry.clear();
+    }
+}
