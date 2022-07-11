@@ -1,0 +1,9 @@
+{
+    "name": "Ext JS 7.5.x Framework - App",
+    "version": "0.1",
+    "author": "Sencha Inc.",
+    "files": [
+        "../../../../src/frameworks/ext75/app/Project.js",
+        "../../../../src/frameworks/ext75/app/Settings.js"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Ext JS 7.5.x Framework - Component",
+    "version": "0.1",
+    "author": "Sencha Inc.",
+    "files": [
+        "../../../../src/frameworks/extcommon/component/CodeGeneration.js",
+        "../../../../src/frameworks/ext75/component/CodeGeneration.js",
+        "../../../../src/frameworks/ext75/component/Definition.js"
+    ]
+}
