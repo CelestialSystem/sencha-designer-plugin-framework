@@ -1,0 +1,26 @@
+{
+    "name": "modern75",
+    "version": "0.1",
+    "author": "Sencha Inc.",
+    "description": "Sencha Modern 7.5.x Framework",
+    "plugins": [
+        "~/app",
+        "~/init",
+        "~/component",
+        "~/definitions",
+        "~/ui"
+    ],
+    "files": [
+        "../../../src/frameworks/modern75/Environment.js",
+        "../../../src/frameworks/modern75/DefaultStores.js"
+    ],
+    "destroy": function() {
+    var plugins = ["Sencha Modern 7.5.x Framework - UI", "Sencha Modern 7.5.x Framework - Component", "Sencha Modern 7.5.x - Definitions", "Sencha Modern 7.5.x Framework - Init", "Sencha Modern 7.5.x Framework - App"];
+        plugins.forEach(function(plugin) {
+            sencha.plugin.Manager.unload(plugin);
+        });
+        delete xds.builtInSnapshots;
+        xds.builtInSnapshots = {};
+        xds.component.Registry.clear();
+    }
+}

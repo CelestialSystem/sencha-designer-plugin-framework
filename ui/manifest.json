@@ -1,0 +1,64 @@
+{
+    "name": "Sencha Modern 7.5.x Framework - UI",
+    "version": "0.1",
+    "author": "Sencha Inc.",
+    "files": [
+        "../../../../src/frameworks/modern75/ui/canvas/Modern75Canvas.js"
+    ],
+    init: function() {
+        var mgr = xds.ui.canvas.Manager;
+        if (mgr) {
+            mgr.addResource('modern75/framework/modern/theme-triton/resources/theme-triton-all.css', 'xdsLibraryCss');
+            mgr.addResource('modern75/sencha-modern-overrides.css');
+            mgr.addResource('modern75/framework/packages/ux/modern-neptune/resources/ux-all.css');
+            mgr.addResource('modern75/sencha-modern-prepare.js');
+            mgr.addResource('modern75/framework/ext-modern-all-debug.js');
+            mgr.addResource('modern75/framework/packages/ux/ux-debug.js');            
+            mgr.addResource('modern75/framework/packages/charts/charts-debug.js');
+            mgr.addResource('modern75/framework/packages/google/google-debug.js');
+            mgr.addResource('modern75/framework/packages/exporter/exporter-debug.js');
+            mgr.addResource('modern75/framework/packages/calendar/calendar-debug.js');
+            mgr.addResource('modern75/framework/packages/pivot/pivot-debug.js');
+            mgr.addResource('modern75/framework/packages/d3/d3-debug.js');
+            mgr.addResource('modern75/framework/packages/froala/froala-editor-debug.js');
+            mgr.addResource('modern75/framework/packages/pivot-d3/pivot-d3-debug.js');
+            mgr.addResource('about:blank', 'xdsThemeJs', 'js'); //placeholder for themes that have a JS file, e.g. ext-neptune.js
+            mgr.addResource('../../src/vendor/rsvp/rsvp.js');
+            mgr.addResource('../core/Promiser.js');
+            mgr.addResource('../core/CrossWindowMessaging.js');
+            mgr.addResource('../ui/canvas/CanvasConfigEncoding.js');
+            mgr.addResource('modern75/sencha-modern-overrides.js');
+
+            // Canvas helpers
+            mgr.addResource('common/canvas/MouseEvents.js');
+            mgr.addResource('common/canvas/KeyEvents.js');
+            mgr.addResource('common/canvas/MiscHelper.js');
+            mgr.addResource('common/canvas/ModelHelper.js');
+            mgr.addResource('common/canvas/AbstractStoreHelper.js');
+            mgr.addResource('modern75/canvas/StoreHelper.js');
+            mgr.addResource('common/canvas/DirectHelper.js');
+            mgr.addResource('common/canvas/ResourceHelper.js');
+            mgr.addResource('common/canvas/InlineEditHelper.js');
+            mgr.addResource('common/canvas/AbstractViewHelper.js');
+            mgr.addResource('modern75/canvas/ViewHelper.js');
+
+            //<!-- dtype classes -->
+            mgr.addResource('modern75/dtypes/dataview/DataView.js');
+            mgr.addResource('modern75/dtypes/dataview/List.js');
+            mgr.addResource('modern75/dtypes/field/DatePicker.js');
+            mgr.addResource('modern75/dtypes/field/Hidden.js');
+            mgr.addResource('modern75/dtypes/form/FieldSet.js');
+            mgr.addResource('modern75/dtypes/navigation/View.js');
+            mgr.addResource('modern75/dtypes/picker/Date.js');
+            mgr.addResource('modern75/dtypes/picker/Slot.js');
+            mgr.addResource('modern75/dtypes/ActionSheet.js');
+            mgr.addResource('modern75/dtypes/Audio.js');
+            mgr.addResource('modern75/dtypes/Button.js');
+            mgr.addResource('modern75/dtypes/Img.js');
+            mgr.addResource('modern75/dtypes/Map.js');
+            mgr.addResource('modern75/dtypes/TitleBar.js');
+            mgr.addResource('modern75/dtypes/Toolbar.js');
+            mgr.addResource('modern75/dtypes/Video.js');
+        }
+    }
+}

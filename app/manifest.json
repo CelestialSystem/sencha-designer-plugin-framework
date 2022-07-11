@@ -1,0 +1,9 @@
+{
+    "name": "Sencha Modern 7.5.x Framework - App",
+    "version": "0.1",
+    "author": "Sencha Inc.",
+    "files": [
+        "../../../../src/frameworks/modern75/app/Project.js",
+        "../../../../src/frameworks/modern75/app/Settings.js"
+    ]
+}

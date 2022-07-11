@@ -1,0 +1,9 @@
+{
+    "name": "Sencha Modern 7.5.x Framework - Init",
+    "version": "0.1",
+    "author": "Sencha Inc.",
+    "description": "Sencha Modern 7.5.x Framework - Init",
+    "files": [
+        // framework files are loaded into the canvas iframe not the main doc... do we even need this file?
+    ]
+}
